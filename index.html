@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h2>♥ The Invitation</h2>
+        <button id="languageBtn">اردو / English</button>
+    </header>
+
+    <section class="hero">
+        <p class="small-title">A SPECIAL ANNOUNCEMENT</p>
+        <h1 id="heading">A Surprise Is Waiting For You!</h1>
+        <p>Scratch the heart to discover our special day.</p>
+
+        <div class="invitation">
+            <p class="script">Save the Date</p>
+
+            <h2 class="names">Qismat<span>&</span> Saima</h2>
+            <p>Are Beginning Their Forever</p>
+
+            <p class="scratch-title">♡ Scratch to Reveal ♡</p>
+
+            <div class="scratch-box" id="scratchBox">
+                <div class="date">
+                    <h3>OUR WEDDING DAY</h3>
+                    <h2>December 20, 2026</h2>
+                    <p>Sunday · 5:00 PM</p>
+                </div>
+
+                <canvas id="scratchCanvas"></canvas>
+            </div>
+
+            <p id="hint">Use your finger or mouse to scratch the heart.</p>
+
+            <button id="revealBtn">Reveal Invitation</button>
+
+            <hr>
+
+            <p>Your presence will make our day more beautiful!</p>
+
+            <button id="detailsBtn">Explore the Details ↓</button>
+        </div>
+    </section>
+
+    <section class="details" id="details">
+        <p class="small-title">OUR SPECIAL DAY</p>
+        <h2>Join Us for Our Celebration</h2>
+        <p>Two hearts, one beautiful beginning.</p>
+
+        <div class="cards">
+            <div class="card">
+                <h3>♡ Wedding Ceremony</h3>
+                <p>December 20, 2026</p>
+                <p>5:00 PM – 6:00 PM</p>
+            </div>
+
+            <div class="card">
+                <h3>♡ Reception</h3>
+                <p>December 20, 2026</p>
+                <p>7:00 PM – 10:00 PM</p>
+            </div>
+
+            <div class="card">
+                <h3>⌖ Venue</h3>
+                <p>The Rose Garden</p>
+                <p>Swat</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="rsvp">
+        <h2>Will You Join Us?</h2>
+        <p>Please let us know if you can attend.</p>
+
+        <form id="rsvpForm">
+            <label for="guestName">Your Name</label>
+            <input
+                type="text"
+                id="guestName"
+                placeholder="Enter your name"
+                required
+            >
+
+            <label for="attendance">Your Response</label>
+            <select id="attendance" required>
+                <option value="">Choose an option</option>
+                <option value="yes">Joyfully Accepts</option>
+                <option value="no">Sorry, Can't Attend</option>
+            </select>
+
+            <button type="submit">Send RSVP ♥</button>
+        </form>
+
+        <p id="message"></p>
+        <small>This is a demo form. Responses are not sent to the hosts.</small>
+    </section>
+
+    <footer>
+        <h2>♥ Qismat & Saima ♥</h2>
+        <p>Made with love for a day to remember.</p>
+    </footer>
+
+</body>
+</html>
